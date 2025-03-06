@@ -1,0 +1,36 @@
+2025-03-06T13:57:01.966707884+00:00 - INFO - Starting server at http://0.0.0.0:8080
+2025-03-06T13:57:01.966994350+00:00 - INFO - starting 2 workers
+2025-03-06T13:57:01.967015741+00:00 - INFO - Actix runtime found; starting in Actix runtime
+2025-03-06T13:57:01.967025349+00:00 - INFO - starting service: "actix-web-service-0.0.0.0:8080", workers: 2, listening on: 0.0.0.0:8080
+2025-03-06T13:57:36.952426578+00:00 - INFO - 192.168.50.102 "GET /vulnerable/sql?param=%27;%20DROP%20TABLE%20users;%27 HTTP/1.1" 404 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000395
+2025-03-06T13:57:41.334851006+00:00 - INFO - 192.168.50.102 "GET / HTTP/1.1" 200 25 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000191
+2025-03-06T13:59:42.030721848+00:00 - INFO - 192.168.50.102 "GET /vulnerable/sql HTTP/1.1" 404 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000464
+2025-03-06T14:00:03.637563684+00:00 - INFO - 192.168.50.102 "GET /vulnerable/xss?input=%3Cscript%3Ealert(%27XSS%27)%3C%2Fscript%3E HTTP/1.1" 404 0 "-" "curl/8.10.1" 0.000221
+2025-03-06T14:00:56.003816247+00:00 - INFO - SIGINT received; starting forced shutdown
+2025-03-06T14:00:56.004057970+00:00 - INFO - accept thread stopped
+2025-03-06T14:00:56.004473007+00:00 - INFO - shutting down idle worker
+2025-03-06T14:00:56.004549340+00:00 - INFO - shutting down idle worker
+2025-03-06T14:00:59.768322347+00:00 - INFO - Starting server at http://0.0.0.0:8080
+2025-03-06T14:00:59.768608664+00:00 - INFO - starting 2 workers
+2025-03-06T14:00:59.768630525+00:00 - INFO - Actix runtime found; starting in Actix runtime
+2025-03-06T14:00:59.768641415+00:00 - INFO - starting service: "actix-web-service-0.0.0.0:8080", workers: 2, listening on: 0.0.0.0:8080
+2025-03-06T14:01:02.703969480+00:00 - INFO - 192.168.50.102 "GET /vulnerable/sql HTTP/1.1" 400 46 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000355
+2025-03-06T14:01:02.737561040+00:00 - INFO - 192.168.50.102 "GET /favicon.ico HTTP/1.1" 404 0 "http://192.168.50.19:8080/vulnerable/sql" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000129
+2025-03-06T14:01:44.007787401+00:00 - INFO - Potential SQL Injection attempt detected! Query parameter: '; DROP TABLE users; --
+2025-03-06T14:01:44.008003756+00:00 - INFO - 192.168.50.102 "GET /vulnerable/sql?param=%27;%20DROP%20TABLE%20users;%20-- HTTP/1.1" 500 42 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000406
+2025-03-06T14:01:44.052061089+00:00 - INFO - 192.168.50.102 "GET /favicon.ico HTTP/1.1" 404 0 "http://192.168.50.19:8080/vulnerable/sql?param=%27;%20DROP%20TABLE%20users;%20--" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000126
+2025-03-06T14:02:27.546120194+00:00 - INFO - Potential SQL Injection attempt detected! Query parameter: '; DROP TABLE users; --
+2025-03-06T14:02:27.546310731+00:00 - INFO - 192.168.50.102 "GET /vulnerable/sql?param=%27;%20DROP%20TABLE%20users;%20-- HTTP/1.1" 500 42 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000357
+2025-03-06T14:02:32.576903645+00:00 - INFO - Potential SQL Injection attempt detected! Query parameter: '; DROP TABLE users; --
+2025-03-06T14:02:32.577075036+00:00 - INFO - 192.168.50.102 "GET /vulnerable/sql?param=%27;%20DROP%20TABLE%20users;%20-- HTTP/1.1" 500 42 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000342
+2025-03-06T14:02:40.040180832+00:00 - INFO - Potential SQL Injection attempt detected! Query parameter: '; DROP TABLE pass; --
+2025-03-06T14:02:40.040393220+00:00 - INFO - 192.168.50.102 "GET /vulnerable/sql?param=%27;%20DROP%20TABLE%20pass;%20-- HTTP/1.1" 500 42 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000491
+2025-03-06T14:02:45.457242068+00:00 - INFO - Potential SQL Injection attempt detected! Query parameter: '; DROP TABLE users; --
+2025-03-06T14:02:45.457408400+00:00 - INFO - 192.168.50.102 "GET /vulnerable/sql?param=%27;%20DROP%20TABLE%20users;%20-- HTTP/1.1" 500 42 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000312
+2025-03-06T14:02:56.051408277+00:00 - INFO - Potential XSS attempt detected! User input: <script>alert('XSS')</script>
+2025-03-06T14:02:56.051551245+00:00 - INFO - 127.0.0.1 "GET /vulnerable/xss?input=%3Cscript%3Ealert(%27XSS%27)%3C/script%3E HTTP/1.1" 200 71 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000336
+2025-03-06T14:02:56.115446060+00:00 - INFO - 127.0.0.1 "GET /favicon.ico HTTP/1.1" 404 0 "http://localhost:8080/vulnerable/xss?input=%3Cscript%3Ealert(%27XSS%27)%3C/script%3E" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000171
+2025-03-06T14:08:59.851784344+00:00 - INFO - SIGINT received; starting forced shutdown
+2025-03-06T14:08:59.852028762+00:00 - INFO - accept thread stopped
+2025-03-06T14:08:59.852300912+00:00 - INFO - shutting down idle worker
+2025-03-06T14:08:59.852666327+00:00 - INFO - shutting down idle worker
