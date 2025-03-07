@@ -26,6 +26,9 @@ async fn main() -> std::io::Result<()> {
             .route("/vulnerable/cmd/{command}", web::get().to(routes::vulnerabilities::command_injection))
             .route("/upload", web::post().to(routes::vulnerabilities::file_upload_trap))
             .route("/analyse", web::post().to(routes::vulnerabilities::analyze_user_agent))
+            .route("/admin", web::get().to(routes::admin::admin_login_page))
+            .route("/admin/login", web::post().to(routes::admin::admin_login))
+            .route("/admin/dashboard", web::get().to(routes::admin::admin_dashboard))
 
     })
     .bind("0.0.0.0:8080")?
