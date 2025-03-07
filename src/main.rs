@@ -26,6 +26,8 @@ async fn main() -> std::io::Result<()> {
             .route("/vulnerable/sql", web::get().to(routes::vulnerabilities::sql_injection))
             .route("/vulnerable/xss", web::get().to(routes::vulnerabilities::xss))
             .route("/vulnerable/cmd/{command}", web::get().to(routes::vulnerabilities::command_injection))
+            .route("/upload", web::post().to(routes::vulnerabilities::file_upload_trap))
+
     })
     .bind("0.0.0.0:8080")?
     .run()

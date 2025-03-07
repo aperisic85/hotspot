@@ -61,3 +61,41 @@
 2025-03-07T12:32:50.164578536+00:00 - INFO - accept thread stopped
 2025-03-07T12:32:50.164774634+00:00 - INFO - shutting down idle worker
 2025-03-07T12:32:50.165027768+00:00 - INFO - shutting down idle worker
+2025-03-07T12:57:24.250565374+00:00 - INFO - Starting server at http://0.0.0.0:8080
+2025-03-07T12:57:24.251171640+00:00 - INFO - starting 2 workers
+2025-03-07T12:57:24.251197799+00:00 - INFO - Actix runtime found; starting in Actix runtime
+2025-03-07T12:57:24.251209100+00:00 - INFO - starting service: "actix-web-service-0.0.0.0:8080", workers: 2, listening on: 0.0.0.0:8080
+2025-03-07T12:59:26.616137288+00:00 - INFO - SIGINT received; starting forced shutdown
+2025-03-07T12:59:26.616411772+00:00 - INFO - accept thread stopped
+2025-03-07T12:59:26.616603501+00:00 - INFO - shutting down idle worker
+2025-03-07T12:59:26.616815088+00:00 - INFO - shutting down idle worker
+2025-03-07T12:59:44.077326765+00:00 - INFO - Starting server at http://0.0.0.0:8080
+2025-03-07T12:59:44.077614985+00:00 - INFO - starting 2 workers
+2025-03-07T12:59:44.077643608+00:00 - INFO - Actix runtime found; starting in Actix runtime
+2025-03-07T12:59:44.077654789+00:00 - INFO - starting service: "actix-web-service-0.0.0.0:8080", workers: 2, listening on: 0.0.0.0:8080
+2025-03-07T13:00:33.589668417+00:00 - INFO - 192.168.50.102 "POST /upload HTTP/1.1" 200 26 "-" "curl/8.10.1" 0.000618
+2025-03-07T13:01:24.014959268+00:00 - INFO - 192.168.50.102 "POST /upload HTTP/1.1" 200 26 "-" "curl/8.10.1" 0.000591
+2025-03-07T13:02:58.728048657+00:00 - INFO - 192.168.50.102 "POST /upload HTTP/1.1" 200 26 "-" "curl/8.10.1" 0.000506
+2025-03-07T13:04:50.009371526+00:00 - INFO - SIGINT received; starting forced shutdown
+2025-03-07T13:04:50.009692929+00:00 - INFO - accept thread stopped
+2025-03-07T13:04:50.010212372+00:00 - INFO - shutting down idle worker
+2025-03-07T13:04:50.010540767+00:00 - INFO - shutting down idle worker
+2025-03-07T13:04:53.533816165+00:00 - INFO - Starting server at http://0.0.0.0:8080
+2025-03-07T13:04:53.534088756+00:00 - INFO - starting 2 workers
+2025-03-07T13:04:53.534110517+00:00 - INFO - Actix runtime found; starting in Actix runtime
+2025-03-07T13:04:53.534121146+00:00 - INFO - starting service: "actix-web-service-0.0.0.0:8080", workers: 2, listening on: 0.0.0.0:8080
+2025-03-07T13:04:56.657543151+00:00 - INFO - File upload attempt detected but no filename provided.
+2025-03-07T13:04:56.657828025+00:00 - INFO - 192.168.50.102 "POST /upload HTTP/1.1" 200 26 "-" "curl/8.10.1" 0.000721
+2025-03-07T13:05:51.021541853+00:00 - INFO - File upload attempt detected - Filename: development
+2025-03-07T13:05:51.021734023+00:00 - INFO - Error reading file chunk: Multipart stream is incomplete
+2025-03-07T13:05:51.021861452+00:00 - INFO - 192.168.50.102 "POST /upload HTTP/1.1" 500 21 "-" "curl/8.10.1" 0.003957
+2025-03-07T13:06:40.710720468+00:00 - INFO - File upload attempt detected - Filename: config.txt
+2025-03-07T13:06:40.710851894+00:00 - INFO - File size: 733 bytes
+2025-03-07T13:06:40.710958985+00:00 - INFO - 192.168.50.102 "POST /upload HTTP/1.1" 200 26 "-" "curl/8.10.1" 0.000533
+2025-03-07T13:06:56.851223209+00:00 - INFO - File upload attempt detected - Filename: config.txt
+2025-03-07T13:06:56.851437440+00:00 - INFO - File size: 733 bytes
+2025-03-07T13:06:56.851549430+00:00 - INFO - 192.168.50.102 "POST /upload HTTP/1.1" 200 26 "-" "curl/8.10.1" 0.000693
+2025-03-07T13:07:34.132753753+00:00 - INFO - SIGINT received; starting forced shutdown
+2025-03-07T13:07:34.133007830+00:00 - INFO - accept thread stopped
+2025-03-07T13:07:34.133225037+00:00 - INFO - shutting down idle worker
+2025-03-07T13:07:34.133518487+00:00 - INFO - shutting down idle worker

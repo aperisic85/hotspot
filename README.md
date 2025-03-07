@@ -14,12 +14,13 @@ Honeypot
 
         Log all attempts to exploit these "vulnerabilities".
 
+    (Done)
     File Upload Trap:
 
         Add a file upload feature that accepts and logs all uploaded files without actually storing them.
 
         This can help capture potential malware samples.
-
+    (Done)
     Command Injection Simulator:
 
         Create an endpoint that appears to allow command injection.
