@@ -152,3 +152,24 @@
 2025-03-07T13:21:35.908125735+00:00 - INFO - accept thread stopped
 2025-03-07T13:21:35.908305272+00:00 - INFO - shutting down idle worker
 2025-03-07T13:21:35.908786714+00:00 - INFO - shutting down idle worker
+2025-03-07T13:28:06.222580351+00:00 - INFO - Starting server at http://0.0.0.0:8080
+2025-03-07T13:28:06.222895021+00:00 - INFO - starting 2 workers
+2025-03-07T13:28:06.222918956+00:00 - INFO - Actix runtime found; starting in Actix runtime
+2025-03-07T13:28:06.222930026+00:00 - INFO - starting service: "actix-web-service-0.0.0.0:8080", workers: 2, listening on: 0.0.0.0:8080
+2025-03-07T13:29:01.654488813+00:00 - INFO - 192.168.50.102 "GET / HTTP/1.1" 200 25 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000447
+2025-03-07T13:29:01.805758867+00:00 - INFO - 192.168.50.102 "GET /favicon.ico HTTP/1.1" 404 0 "http://192.168.50.19:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000158
+2025-03-07T13:32:57.639119949+00:00 - INFO - SIGINT received; starting forced shutdown
+2025-03-07T13:32:57.639400334+00:00 - INFO - accept thread stopped
+2025-03-07T13:32:57.639575412+00:00 - INFO - shutting down idle worker
+2025-03-07T13:32:57.639812366+00:00 - INFO - shutting down idle worker
+2025-03-07T13:33:01.396114067+00:00 - INFO - Starting server at http://0.0.0.0:8080
+2025-03-07T13:33:01.396405834+00:00 - INFO - starting 2 workers
+2025-03-07T13:33:01.396431211+00:00 - INFO - Actix runtime found; starting in Actix runtime
+2025-03-07T13:33:01.396442052+00:00 - INFO - starting service: "actix-web-service-0.0.0.0:8080", workers: 2, listening on: 0.0.0.0:8080
+2025-03-07T13:33:06.891942615+00:00 - INFO - 192.168.50.102 "GET / HTTP/1.1" 200 25 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000391
+2025-03-07T13:33:06.979023217+00:00 - INFO - 192.168.50.102 "GET /favicon.ico HTTP/1.1" 404 0 "http://192.168.50.19:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000154
+2025-03-07T13:33:09.779425163+00:00 - INFO - 192.168.50.102 "GET / HTTP/1.1" 200 25 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000312
+2025-03-07T13:33:22.959071588+00:00 - INFO - SIGINT received; starting forced shutdown
+2025-03-07T13:33:22.959320625+00:00 - INFO - accept thread stopped
+2025-03-07T13:33:22.959682854+00:00 - INFO - shutting down idle worker
+2025-03-07T13:33:22.959756652+00:00 - INFO - shutting down idle worker

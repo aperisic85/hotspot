@@ -1,3 +1,4 @@
+use actix_web::middleware::DefaultHeaders;
 use actix_web::{web, App, HttpServer,HttpResponse, middleware};
 use actix_web::error::JsonPayloadError;
 use log::error;
@@ -16,6 +17,7 @@ async fn main() -> std::io::Result<()> {
     HttpServer::new(|| {
         App::new()
         .wrap(middleware::Logger::default())
+        .wrap(DefaultHeaders::new().add(("Server", "Microsoft-IIS/10.0")).add(("X-Powered-By", "PHP/7.4.3"))) //add fake headers
         .app_data(web::JsonConfig::default().limit(4096).error_handler(json_error_handler))
             .route("/", web::get().to(routes::index::index))
             .route("/login", web::post().to(routes::login::fake_login))

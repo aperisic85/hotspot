@@ -30,7 +30,11 @@ Honeypot
     - User-Agent Analysis:
 
         Log and analyze User-Agent strings to identify potential attack tools.
+    -   Banner Grabbing:
 
+        Provide fake server information in response headers to mislead attackers about your system.
+        (set: x-powered-by: PHP/7.4.3
+        server: Microsoft-IIS/10.0 )
 
 TODO:
 
@@ -38,9 +42,6 @@ TODO:
 
         Implement artificial delays in responses to slow down automated scanning tools.
 
-    Banner Grabbing:
-
-        Provide fake server information in response headers to mislead attackers about your system.
 
     Session Tracking:
 
