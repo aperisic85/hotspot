@@ -42,3 +42,10 @@ pub async fn xss(payload: web::Query<XssPayload>) -> impl Responder {
         user_input
     ))
 }
+
+pub async fn command_injection(cmd: web::Path<String>) -> impl Responder {
+    info!("Potential command injection attempt detected! Command: {}", cmd);
+
+    let fake_output = format!("Executing command: {}\nOutput: Command not found", cmd);
+    HttpResponse::Ok().body(fake_output)
+}

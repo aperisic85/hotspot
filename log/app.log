@@ -34,3 +34,30 @@
 2025-03-06T14:08:59.852028762+00:00 - INFO - accept thread stopped
 2025-03-06T14:08:59.852300912+00:00 - INFO - shutting down idle worker
 2025-03-06T14:08:59.852666327+00:00 - INFO - shutting down idle worker
+2025-03-06T22:37:20.157733901+00:00 - INFO - Starting server at http://0.0.0.0:8080
+2025-03-06T22:37:20.158019766+00:00 - INFO - starting 2 workers
+2025-03-06T22:37:20.158046597+00:00 - INFO - Actix runtime found; starting in Actix runtime
+2025-03-06T22:37:20.158057718+00:00 - INFO - starting service: "actix-web-service-0.0.0.0:8080", workers: 2, listening on: 0.0.0.0:8080
+2025-03-07T12:28:55.278896589+00:00 - INFO - SIGINT received; starting forced shutdown
+2025-03-07T12:28:55.279163218+00:00 - INFO - shutting down idle worker
+2025-03-07T12:28:55.279336072+00:00 - INFO - accept thread stopped
+2025-03-07T12:31:04.153614023+00:00 - INFO - Starting server at http://0.0.0.0:8080
+2025-03-07T12:31:04.153929254+00:00 - INFO - starting 2 workers
+2025-03-07T12:31:04.153957276+00:00 - INFO - Actix runtime found; starting in Actix runtime
+2025-03-07T12:31:04.153968507+00:00 - INFO - starting service: "actix-web-service-0.0.0.0:8080", workers: 2, listening on: 0.0.0.0:8080
+2025-03-07T12:31:42.489883586+00:00 - INFO - Potential command injection attempt detected! Command: ping
+2025-03-07T12:31:42.490155245+00:00 - INFO - 127.0.0.1 "GET /vulnerable/cmd/ping HTTP/1.1" 200 49 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000821
+2025-03-07T12:32:04.152452682+00:00 - INFO - Potential command injection attempt detected! Command: ping
+2025-03-07T12:32:04.152690197+00:00 - INFO - 127.0.0.1 "GET /vulnerable/cmd/ping HTTP/1.1" 200 49 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000665
+2025-03-07T12:32:04.181014243+00:00 - INFO - 127.0.0.1 "GET /favicon.ico HTTP/1.1" 404 0 "http://localhost:8080/vulnerable/cmd/ping" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000138
+2025-03-07T12:32:20.994507085+00:00 - INFO - Potential command injection attempt detected! Command: ping
+2025-03-07T12:32:20.994658639+00:00 - INFO - 127.0.0.1 "GET /vulnerable/cmd/ping HTTP/1.1" 200 49 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000435
+2025-03-07T12:32:29.022752967+00:00 - INFO - Potential command injection attempt detected! Command: ping
+2025-03-07T12:32:29.022905472+00:00 - INFO - 192.168.50.102 "GET /vulnerable/cmd/ping HTTP/1.1" 200 49 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000380
+2025-03-07T12:32:29.072568712+00:00 - INFO - 192.168.50.102 "GET /favicon.ico HTTP/1.1" 404 0 "http://192.168.50.19:8080/vulnerable/cmd/ping" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000161
+2025-03-07T12:32:35.520668645+00:00 - INFO - Potential command injection attempt detected! Command: halt
+2025-03-07T12:32:35.520805672+00:00 - INFO - 192.168.50.102 "GET /vulnerable/cmd/halt HTTP/1.1" 200 49 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000318
+2025-03-07T12:32:50.164335992+00:00 - INFO - SIGINT received; starting forced shutdown
+2025-03-07T12:32:50.164578536+00:00 - INFO - accept thread stopped
+2025-03-07T12:32:50.164774634+00:00 - INFO - shutting down idle worker
+2025-03-07T12:32:50.165027768+00:00 - INFO - shutting down idle worker

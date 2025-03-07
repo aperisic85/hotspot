@@ -7,7 +7,7 @@ Honeypot
         Implement a fake login page that logs all attempted username/password combinations.
 
         Respond with convincing error messages for failed logins.
-    (TODO)
+    (Done)
     Simulated Vulnerabilities:
 
         Create endpoints that appear vulnerable to common attacks (e.g., SQL injection, XSS).
