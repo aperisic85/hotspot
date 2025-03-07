@@ -1,79 +1,52 @@
-# hotspot
-Honeypot
+# Honeypot Application
 
-    DONE: 
-    - Fake Login System:
+A sophisticated honeypot application written in Rust using Actix-web, designed to detect and log potential cyber attacks.
 
-        Implement a fake login page that logs all attempted username/password combinations.
+## Features
 
-        Respond with convincing error messages for failed logins.
-   
-    - Simulated Vulnerabilities:
+### Implemented:
 
-        Create endpoints that appear vulnerable to common attacks (e.g., SQL injection, XSS).
+- **Fake Login System**
+  - Logs all attempted username/password combinations
+  - Responds with convincing error messages for failed logins
 
-        Log all attempts to exploit these "vulnerabilities".
+- **Simulated Vulnerabilities**
+  - Endpoints simulating common vulnerabilities (SQL injection, XSS)
+  - Logs all exploitation attempts
 
-    
-    - File Upload Trap:
+- **File Upload Trap**
+  - Accepts and logs uploaded files without storing them
+  - Helps capture potential malware samples
 
-        Add a file upload feature that accepts and logs all uploaded files without actually storing them.
+- **Command Injection Simulator**
+  - Endpoint simulating command injection vulnerability
+  - Logs attempted commands without execution
 
-        This can help capture potential malware samples.
-    
-    - Command Injection Simulator:
+- **User-Agent Analysis**
+  - Logs and analyzes User-Agent strings
+  - Helps identify potential attack tools
 
-        Create an endpoint that appears to allow command injection.
+- **Banner Grabbing Deception**
+  - Provides fake server information in response headers
+  - Set to mimic PHP 7.4.3 on Microsoft-IIS/10.0
 
-        Log all attempted commands without actually executing them.
-    
-    - User-Agent Analysis:
+### To Be Implemented:
 
-        Log and analyze User-Agent strings to identify potential attack tools.
-    -   Banner Grabbing:
+- Delayed Responses
+- Session Tracking
+- Geolocation Logging
+- Honeytokens
+- Dynamic Content Generation
+- Rate Limiting with Logging
+- Fake Admin Panel
+- API Endpoint Mimicry
+- SSL/TLS Downgrade Logging
+- Path Traversal Detection
 
-        Provide fake server information in response headers to mislead attackers about your system.
-        (set: x-powered-by: PHP/7.4.3
-        server: Microsoft-IIS/10.0 )
+## License
 
-TODO:
+This project is licensed under the [MIT License](LICENSE).
 
-    - Delayed Responses:
+## Disclaimer
 
-        Implement artificial delays in responses to slow down automated scanning tools.
-
-
-    - Session Tracking:
-
-        Implement session tracking to monitor attacker behavior across multiple requests.
-
-    - Geolocation Logging:
-
-        Log the geographical origin of incoming requests.
-    
-  
-    - Honeytokens:
-
-        Place fake sensitive data (like API keys) in easily discoverable locations and monitor their usage.
-
-    - Dynamic Content Generation:
-
-        Generate fake dynamic content to make the honeypot appear more like a real application.
-
-    - Rate Limiting with Logging:
-
-        Implement rate limiting and log when limits are exceeded, which could indicate automated attacks.
-
-    - Fake Admin Panel:
-
-        Create a fake admin panel that logs all access attempts.
-
-    - API Endpoint Mimicry:
-
-        Mimic common API endpoints (e.g., /api/users) and log interactions with them.
-
-    - SSL/TLS Downgrade Logging:
-
-        Log attempts to downgrade SSL/TLS connections.
-    
-    - Path traversal
+This honeypot is for educational and research purposes only. Always ensure you have proper authorization before deploying on any network.
