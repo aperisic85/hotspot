@@ -1,6 +1,5 @@
 use actix_web::{web, App, HttpServer,HttpResponse, middleware};
 use actix_web::error::JsonPayloadError;
-use env_logger;
 use log::error;
 use log4rs::init_file;
 
@@ -11,9 +10,6 @@ mod logging;
 async fn main() -> std::io::Result<()> {
     
     init_file("log4rs.yaml", Default::default()).unwrap();
-   // Initialize logger
-   // env_logger::init_from_env(env_logger::Env::new().default_filter_or("info"));
-
     log::info!("Starting server at http://0.0.0.0:8080");
 
     // Start Actix-web server
@@ -27,6 +23,7 @@ async fn main() -> std::io::Result<()> {
             .route("/vulnerable/xss", web::get().to(routes::vulnerabilities::xss))
             .route("/vulnerable/cmd/{command}", web::get().to(routes::vulnerabilities::command_injection))
             .route("/upload", web::post().to(routes::vulnerabilities::file_upload_trap))
+            .route("/analyse", web::post().to(routes::vulnerabilities::analyze_user_agent))
 
     })
     .bind("0.0.0.0:8080")?

@@ -99,3 +99,56 @@
 2025-03-07T13:07:34.133007830+00:00 - INFO - accept thread stopped
 2025-03-07T13:07:34.133225037+00:00 - INFO - shutting down idle worker
 2025-03-07T13:07:34.133518487+00:00 - INFO - shutting down idle worker
+2025-03-07T13:15:12.906111800+00:00 - INFO - Starting server at http://0.0.0.0:8080
+2025-03-07T13:15:12.906424155+00:00 - INFO - starting 2 workers
+2025-03-07T13:15:12.906448751+00:00 - INFO - Actix runtime found; starting in Actix runtime
+2025-03-07T13:15:12.906459341+00:00 - INFO - starting service: "actix-web-service-0.0.0.0:8080", workers: 2, listening on: 0.0.0.0:8080
+2025-03-07T13:15:19.428752427+00:00 - INFO - 192.168.50.102 "GET /analyse HTTP/1.1" 404 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000380
+2025-03-07T13:15:19.467429262+00:00 - INFO - 192.168.50.102 "GET /favicon.ico HTTP/1.1" 404 0 "http://192.168.50.19:8080/analyse" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000146
+2025-03-07T13:17:48.294427508+00:00 - INFO - SIGINT received; starting forced shutdown
+2025-03-07T13:17:48.294742218+00:00 - INFO - accept thread stopped
+2025-03-07T13:17:48.294940580+00:00 - INFO - shutting down idle worker
+2025-03-07T13:17:48.295203011+00:00 - INFO - shutting down idle worker
+2025-03-07T13:18:32.746068517+00:00 - INFO - Starting server at http://0.0.0.0:8080
+2025-03-07T13:18:32.746415718+00:00 - INFO - starting 2 workers
+2025-03-07T13:18:32.746445123+00:00 - INFO - Actix runtime found; starting in Actix runtime
+2025-03-07T13:18:32.746456274+00:00 - INFO - starting service: "actix-web-service-0.0.0.0:8080", workers: 2, listening on: 0.0.0.0:8080
+2025-03-07T13:19:29.967881051+00:00 - INFO - SIGINT received; starting forced shutdown
+2025-03-07T13:19:29.968205268+00:00 - INFO - accept thread stopped
+2025-03-07T13:19:29.968404271+00:00 - INFO - shutting down idle worker
+2025-03-07T13:19:29.968651465+00:00 - INFO - shutting down idle worker
+2025-03-07T13:19:31.169885588+00:00 - INFO - Starting server at http://0.0.0.0:8080
+2025-03-07T13:19:31.170208713+00:00 - INFO - starting 2 workers
+2025-03-07T13:19:31.170231977+00:00 - INFO - Actix runtime found; starting in Actix runtime
+2025-03-07T13:19:31.170242727+00:00 - INFO - starting service: "actix-web-service-0.0.0.0:8080", workers: 2, listening on: 0.0.0.0:8080
+2025-03-07T13:20:01.614616464+00:00 - INFO - SIGINT received; starting forced shutdown
+2025-03-07T13:20:01.614875680+00:00 - INFO - shutting down idle worker
+2025-03-07T13:20:01.615234062+00:00 - INFO - shutting down idle worker
+2025-03-07T13:20:01.615754497+00:00 - INFO - accept thread stopped
+2025-03-07T13:20:03.596441167+00:00 - INFO - Starting server at http://0.0.0.0:8080
+2025-03-07T13:20:03.596751368+00:00 - INFO - starting 2 workers
+2025-03-07T13:20:03.596778720+00:00 - INFO - Actix runtime found; starting in Actix runtime
+2025-03-07T13:20:03.596789610+00:00 - INFO - starting service: "actix-web-service-0.0.0.0:8080", workers: 2, listening on: 0.0.0.0:8080
+2025-03-07T13:20:58.515548228+00:00 - INFO - SIGINT received; starting forced shutdown
+2025-03-07T13:20:58.515809698+00:00 - INFO - accept thread stopped
+2025-03-07T13:20:58.516122634+00:00 - INFO - shutting down idle worker
+2025-03-07T13:20:58.516484432+00:00 - INFO - shutting down idle worker
+2025-03-07T13:20:59.954687069+00:00 - INFO - Starting server at http://0.0.0.0:8080
+2025-03-07T13:20:59.954990207+00:00 - INFO - starting 2 workers
+2025-03-07T13:20:59.955025192+00:00 - INFO - Actix runtime found; starting in Actix runtime
+2025-03-07T13:20:59.955042825+00:00 - INFO - starting service: "actix-web-service-0.0.0.0:8080", workers: 2, listening on: 0.0.0.0:8080
+2025-03-07T13:21:06.788211801+00:00 - INFO - 192.168.50.102 "GET /analyse HTTP/1.1" 404 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000377
+2025-03-07T13:21:06.835701393+00:00 - INFO - 192.168.50.102 "GET /favicon.ico HTTP/1.1" 404 0 "http://192.168.50.19:8080/analyse" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000139
+2025-03-07T13:21:14.357681741+00:00 - INFO - 192.168.50.102 "GET /upload HTTP/1.1" 404 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000324
+2025-03-07T13:21:25.083467616+00:00 - INFO - SIGINT received; starting forced shutdown
+2025-03-07T13:21:25.083716482+00:00 - INFO - shutting down idle worker
+2025-03-07T13:21:25.083913341+00:00 - INFO - shutting down idle worker
+2025-03-07T13:21:25.084015853+00:00 - INFO - accept thread stopped
+2025-03-07T13:21:26.904703287+00:00 - INFO - Starting server at http://0.0.0.0:8080
+2025-03-07T13:21:26.905042793+00:00 - INFO - starting 2 workers
+2025-03-07T13:21:26.905065065+00:00 - INFO - Actix runtime found; starting in Actix runtime
+2025-03-07T13:21:26.905073912+00:00 - INFO - starting service: "actix-web-service-0.0.0.0:8080", workers: 2, listening on: 0.0.0.0:8080
+2025-03-07T13:21:35.907882279+00:00 - INFO - SIGINT received; starting forced shutdown
+2025-03-07T13:21:35.908125735+00:00 - INFO - accept thread stopped
+2025-03-07T13:21:35.908305272+00:00 - INFO - shutting down idle worker
+2025-03-07T13:21:35.908786714+00:00 - INFO - shutting down idle worker

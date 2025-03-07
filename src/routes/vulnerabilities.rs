@@ -1,4 +1,4 @@
-use actix_web::{web, HttpResponse, Responder};
+use actix_web::{web, HttpResponse, Responder, HttpRequest};
 use log::info;
 use serde::Deserialize;
 use actix_multipart::Multipart;
@@ -87,4 +87,25 @@ pub async fn file_upload_trap(mut payload: Multipart) -> impl Responder {
     }
 
     HttpResponse::Ok().body("File uploaded successfully")
+}
+
+pub async fn analyze_user_agent(req: HttpRequest) -> HttpResponse {
+    if let Some(user_agent) = req.headers().get("User-Agent") {
+        if let Ok(user_agent_str) = user_agent.to_str() {
+            log::info!("User-Agent: {}", user_agent_str);
+            
+            // Analyze the User-Agent string
+            if user_agent_str.contains("Mozilla") {
+                log::info!("Browser detected: Mozilla-based");
+            } else if user_agent_str.contains("Chrome") {
+                log::info!("Browser detected: Chrome");
+            } else if user_agent_str.contains("curl") {
+                log::info!("Tool detected: curl");
+            } else {
+                log::info!("Unknown User-Agent");
+            }
+        }
+    }
+    
+    HttpResponse::Ok().body("User-Agent analyzed")
 }
