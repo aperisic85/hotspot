@@ -1,31 +1,38 @@
 # hotspot
 Honeypot
 
-    (Done)
-    Fake Login System:
+    DONE: 
+   - Fake Login System:
 
         Implement a fake login page that logs all attempted username/password combinations.
 
         Respond with convincing error messages for failed logins.
-    (Done)
-    Simulated Vulnerabilities:
+   
+   - Simulated Vulnerabilities:
 
         Create endpoints that appear vulnerable to common attacks (e.g., SQL injection, XSS).
 
         Log all attempts to exploit these "vulnerabilities".
 
-    (Done)
-    File Upload Trap:
+    
+   - File Upload Trap:
 
         Add a file upload feature that accepts and logs all uploaded files without actually storing them.
 
         This can help capture potential malware samples.
-    (Done)
-    Command Injection Simulator:
+    
+   - Command Injection Simulator:
 
         Create an endpoint that appears to allow command injection.
 
         Log all attempted commands without actually executing them.
+    
+    - User-Agent Analysis:
+
+        Log and analyze User-Agent strings to identify potential attack tools.
+
+
+TODO:
 
     Delayed Responses:
 
@@ -42,11 +49,8 @@ Honeypot
     Geolocation Logging:
 
         Log the geographical origin of incoming requests.
-
-    User-Agent Analysis:
-
-        Log and analyze User-Agent strings to identify potential attack tools.
-
+    
+  
     Honeytokens:
 
         Place fake sensitive data (like API keys) in easily discoverable locations and monitor their usage.
