@@ -173,3 +173,43 @@
 2025-03-07T13:33:22.959320625+00:00 - INFO - accept thread stopped
 2025-03-07T13:33:22.959682854+00:00 - INFO - shutting down idle worker
 2025-03-07T13:33:22.959756652+00:00 - INFO - shutting down idle worker
+2025-03-07T13:55:54.835936179+00:00 - INFO - Starting server at http://0.0.0.0:8080
+2025-03-07T13:55:54.836237914+00:00 - INFO - starting 2 workers
+2025-03-07T13:55:54.836275435+00:00 - INFO - Actix runtime found; starting in Actix runtime
+2025-03-07T13:55:54.836286946+00:00 - INFO - starting service: "actix-web-service-0.0.0.0:8080", workers: 2, listening on: 0.0.0.0:8080
+2025-03-07T13:56:03.374930759+00:00 - INFO - 192.168.50.102 "GET /admin HTTP/1.1" 200 423 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000235
+2025-03-07T13:56:03.428750735+00:00 - INFO - 192.168.50.102 "GET /favicon.ico HTTP/1.1" 404 0 "http://192.168.50.19:8080/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000153
+2025-03-07T13:56:10.110545235+00:00 - INFO - Admin login attempt - Username: ante, Password: bla
+2025-03-07T13:56:10.110788090+00:00 - INFO - 192.168.50.102 "POST /admin/login HTTP/1.1" 302 0 "http://192.168.50.19:8080/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000487
+2025-03-07T13:56:10.154135838+00:00 - INFO - 192.168.50.102 "GET /admin/dashboard HTTP/1.1" 200 230 "http://192.168.50.19:8080/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000204
+2025-03-07T13:57:25.303351918+00:00 - INFO - SIGINT received; starting forced shutdown
+2025-03-07T13:57:25.303461924+00:00 - INFO - accept thread stopped
+2025-03-07T13:57:25.303543266+00:00 - INFO - shutting down idle worker
+2025-03-07T13:57:25.303634968+00:00 - INFO - shutting down idle worker
+2025-03-07T13:57:29.079127337+00:00 - INFO - Starting server at http://0.0.0.0:8080
+2025-03-07T13:57:29.079425616+00:00 - INFO - starting 2 workers
+2025-03-07T13:57:29.079451604+00:00 - INFO - Actix runtime found; starting in Actix runtime
+2025-03-07T13:57:29.079462575+00:00 - INFO - starting service: "actix-web-service-0.0.0.0:8080", workers: 2, listening on: 0.0.0.0:8080
+2025-03-07T13:57:33.555323688+00:00 - INFO - 192.168.50.102 "GET /admin/ HTTP/1.1" 404 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000392
+2025-03-07T13:57:36.494743648+00:00 - INFO - 192.168.50.102 "GET /admin HTTP/1.1" 200 423 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000248
+2025-03-07T13:57:46.351949894+00:00 - INFO - Admin login attempt - Username: ante, Password: trs pass
+2025-03-07T13:57:46.352077894+00:00 - INFO - 192.168.50.102 "POST /admin/login HTTP/1.1" 302 0 "http://192.168.50.19:8080/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000321
+2025-03-07T13:57:46.368723147+00:00 - INFO - 192.168.50.102 "GET /admin/dashboard HTTP/1.1" 200 231 "http://192.168.50.19:8080/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000167
+2025-03-07T13:59:56.411177820+00:00 - INFO - SIGINT received; starting forced shutdown
+2025-03-07T13:59:56.411345094+00:00 - INFO - accept thread stopped
+2025-03-07T13:59:56.411433750+00:00 - INFO - shutting down idle worker
+2025-03-07T13:59:56.411563102+00:00 - INFO - shutting down idle worker
+2025-03-07T14:00:00.024535499+00:00 - INFO - Starting server at http://0.0.0.0:8080
+2025-03-07T14:00:00.024825873+00:00 - INFO - starting 2 workers
+2025-03-07T14:00:00.024848655+00:00 - INFO - Actix runtime found; starting in Actix runtime
+2025-03-07T14:00:00.024859295+00:00 - INFO - starting service: "actix-web-service-0.0.0.0:8080", workers: 2, listening on: 0.0.0.0:8080
+2025-03-07T14:00:04.515956742+00:00 - INFO - 192.168.50.102 "GET / HTTP/1.1" 200 25 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000361
+2025-03-07T14:00:04.559543339+00:00 - INFO - 192.168.50.102 "GET /favicon.ico HTTP/1.1" 404 0 "http://192.168.50.19:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000170
+2025-03-07T14:00:07.851629792+00:00 - INFO - 192.168.50.102 "GET /admin HTTP/1.1" 200 423 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000301
+2025-03-07T14:00:09.297935010+00:00 - INFO - Admin login attempt - Username: ante, Password: trs pass
+2025-03-07T14:00:09.298073019+00:00 - INFO - 192.168.50.102 "POST /admin/login HTTP/1.1" 302 0 "http://192.168.50.19:8080/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000330
+2025-03-07T14:00:09.314455491+00:00 - INFO - 192.168.50.102 "GET /admin/dashboard HTTP/1.1" 200 471 "http://192.168.50.19:8080/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" 0.000179
+2025-03-07T14:00:24.204924487+00:00 - INFO - SIGINT received; starting forced shutdown
+2025-03-07T14:00:24.205102190+00:00 - INFO - accept thread stopped
+2025-03-07T14:00:24.205274873+00:00 - INFO - shutting down idle worker
+2025-03-07T14:00:24.205590264+00:00 - INFO - shutting down idle worker

@@ -30,6 +30,11 @@ A sophisticated honeypot application written in Rust using Actix-web, designed t
   - Provides fake server information in response headers
   - Set to mimic PHP 7.4.3 on Microsoft-IIS/10.0
 
+- **Fake Admin Panel**
+  - Simulates an administrative interface to attract and engage potential attackers
+  - Includes a login page that logs all attempted username/password combinations
+
+
 ### To Be Implemented:
 
 - Delayed Responses
@@ -38,7 +43,6 @@ A sophisticated honeypot application written in Rust using Actix-web, designed t
 - Honeytokens
 - Dynamic Content Generation
 - Rate Limiting with Logging
-- Fake Admin Panel
 - API Endpoint Mimicry
 - SSL/TLS Downgrade Logging
 - Path Traversal Detection
